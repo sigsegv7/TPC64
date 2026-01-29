@@ -88,6 +88,15 @@ RSVD    0xFF     Reserved
 +-------------------------------+
 ```
 
+### F-type instructions
+
+```
++----------------+
+| Opcode    Rd   |
+|  7:0     15:8  |
++----------------+
+```
+
 ## Instruction listing
 
 ```
@@ -122,7 +131,7 @@ LDB        0x19      Load byte from memory   [B]
 LDW        0x1A      Load word from memory   [B]
 LDL        0x1B      Load dword from memory  [B]
 LDQ        0x1C      Load qword from memory  [B]
-B          0x1D      Indirect branch         [E]
+B          0x1D      Indirect branch         [F]
 BLT        0x1E      Branch if less-than     [E]
 BGT        0x1F      Branch if greater-than  [E]
 BEQ        0x20      Branch if equal         [E]
