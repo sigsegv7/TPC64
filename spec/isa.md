@@ -78,6 +78,16 @@ RSVD    0xFF     Reserved
 +-----------------------+
 ```
 
+### E-type instructions
+
+```
+ OPCODE    ARG A  ARG B  BRANCH DST
++-------------------------------+
+| Opcode    Ra     Rb    Rc     |
+|  7:0     15:8   23:16  31:24  |
++-------------------------------+
+```
+
 ## Instruction listing
 
 ```
@@ -113,5 +123,9 @@ LDW        0x1A      Load word from memory   [B]
 LDL        0x1B      Load dword from memory  [B]
 LDQ        0x1C      Load qword from memory  [B]
 B          0x1D      Indirect branch         [E]
+BLT        0x1E      Branch if less-than     [E]
+BGT        0x1F      Branch if greater-than  [E]
+BEQ        0x20      Branch if equal         [E]
+BS         0x21      Branch if set           [E]
 -------------------------------------------------------
 ```
