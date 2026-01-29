@@ -3,3 +3,8 @@
 The TPC64 architecture is a system-on-chip (SoC) for personal computing aiming to be
 a sane and minimal alternative to ``x86_64`` while merging ideas from RISC-based
 architectures.
+
+## Specifications and documentation
+
+All specifications, documentation and architecture reference manuals can be
+found within the ``spec/`` directory.
