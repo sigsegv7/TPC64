@@ -1,3 +1,4 @@
+/emul/tpc-emu
 *.bin
 *.o
 *.d
