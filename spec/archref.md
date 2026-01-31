@@ -33,4 +33,5 @@ processing domain are to be idle with their PC inhibit lines high. All register
 banks are to have their general purpose and ABI registers initialized to a fixed
 bitpattern (0x1C1A1C1A1C1A1C1A). All other registers including stack pointers,
 frame pointers, control registers and translation table base registers are to be
-initialized to zero.
+initialized to zero. The program counter is to have an initial value of 0x00000000
+which is mapped to BIOS SPI flash containing platform firmware.
