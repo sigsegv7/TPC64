@@ -48,6 +48,13 @@ struct cpu_domain {
 };
 
 /*
+ * Dump the contents of a processing domain
+ *
+ * @cpu: Processing domain to dump
+ */
+void cpu_dump(struct cpu_domain *cpu);
+
+/*
  * Reset a processing domain
  *
  * @cpu: Processing domain to reset

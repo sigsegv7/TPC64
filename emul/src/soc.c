@@ -15,6 +15,7 @@ soc_reset(struct soc_package *soc)
     }
 
     cpu_reset(&soc->pd[0]);
+    cpu_dump(&soc->pd[0]);
 }
 
 int
