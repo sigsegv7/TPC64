@@ -44,7 +44,7 @@ typedef enum {
  * @regbank: Register bank
  */
 struct cpu_domain {
-    reg_t regbank[REG_MAX];
+    uint64_t regbank[REG_MAX];
 };
 
 /*
