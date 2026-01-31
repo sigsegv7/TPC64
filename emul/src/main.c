@@ -37,8 +37,13 @@ emulation_begin(void)
 {
     struct soc_package soc;
 
+    if (soc_init(&soc) < 0) {
+        perror("soc_init");
+        return;
+    }
+
     /* Bring up the SoC */
-    soc_reset(&soc);
+    soc_destroy(&soc);
 }
 
 int
