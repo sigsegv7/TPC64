@@ -36,6 +36,7 @@ SP      0x10     Stack pointer
 FP      0x11     Frame pointer
 ZERO    0x12     Always-zero
 TTBR    0x13     Translation table base
+PC      0x14     Program counter
 RSVD    0xFF     Reserved
 ----------------------------------------
 ```
