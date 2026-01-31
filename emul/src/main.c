@@ -50,7 +50,7 @@ emulation_begin(void)
     }
 
     /* Attempt to open the BIOS we were provided */
-    if (emul_file_open(firmware_path, O_RDONLY, &fw) < 0) {
+    if (emul_file_open(firmware_path, O_RDWR, &fw) < 0) {
         printf("fatal: failed to open firmware path\n");
         perror("emul_file_open");
         return;
