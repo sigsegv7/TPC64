@@ -8,6 +8,7 @@
 
 #include <stdint.h>
 #include <stddef.h>
+#include <fcntl.h>
 
 /*
  * Represents an opened file
