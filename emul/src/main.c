@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include "emul/soc.h"
 
 #define VERSION "0.0.1"
 
@@ -31,6 +32,15 @@ version(void)
     );
 }
 
+static void
+emulation_begin(void)
+{
+    struct soc_package soc;
+
+    /* Bring up the SoC */
+    soc_reset(&soc);
+}
+
 int
 main(int argc, char **argv)
 {
@@ -47,5 +57,6 @@ main(int argc, char **argv)
         }
     }
 
+    emulation_begin();
     return 0;
 }
